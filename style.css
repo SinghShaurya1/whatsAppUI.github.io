@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#009968 0%, #009968 130px, #d9dbd5 130px, #d9dbd5 100%);
+}
+
+.container {
+    position: relative;
+    width: 4050px;
+    left: 770px;
+    max-height: 100%;
+    background: white;
+    height: calc(100vh - 40px);
+    display: flex;
+}
+
+.leftSide {
+    position: relative;
+    flex: 30%;
+    background: white;
+    width: 1500px;
+}
+
+.rightSide {
+    position: relative;
+    flex: 70%;
+    background: #e5ddd5;
+}
+
+.container .rightSide::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: url(./img/pattern.png);
+    opacity: 0.06;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #ededed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.userImg {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.userCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navIcons {
+    margin-left: 210px;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+}
+
+.navIcons li {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color: #51585c;
+    font-size: 24px;
+    margin-left: 22px;
+}
+
+.searchBar {
+    position: relative;
+    right: 1480px;
+    top: 76px;
+    height: 30px;
+    width: 0px;
+    background: #ff0;
+}
+
+.search {
+    width: 400px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.chatList {
+    position: relative;
+    right: 733px;
+    bottom: 250px;
+    background: rgb(223, 217, 222);
+    width: 900px;
+}
+
+.block{
+    width: 453px;
+}
+
+.imgBox {
+    position: relative;
+    left: 10px;
+    width: 50px;
+    bottom: 60px;
+    height: 22px;
+    border-radius: 50px;
+}
+
+.cover1 {
+    width: 50px;
+    position: relative;
+    top: 10px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+p {
+    position: relative;
+    top: 5px;
+    left: 70px;
+    font-family: sans-serif;
+}
+
+.chating {
+    position: relative;
+    right: 600px;
+    top: 360px;
+    width: 900px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.chats {
+    border-radius: 10px;
+    position: relative;
+    right: 800px;
+    background: rgb(226, 255, 182);
+    height: 70px;
+    top: 250px;
+    padding-left: 200px;
+}
