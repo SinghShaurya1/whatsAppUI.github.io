@@ -1,7 +1,7 @@
-const newChatInput = document.getElementsByClassName(".chating");
-const messages = document.getElementsByClassName("chats");
+const newChatInput = document.getElementsByClassName("chating")[0];
+const messages = document.getElementsByClassName("chats")[0];
 
-newChatInput.addEventListener("keyUp", function (event) {
+newChatInput.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
         const msgText = newChatInput.value;
         const msgItem = document.createElement("li");
