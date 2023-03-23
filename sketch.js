@@ -1,16 +1,5 @@
-const newChatInput = document.getElementsByClassName("chating")[0];
-const messages = document.getElementsByClassName("chats")[0];
-
-newChatInput.addEventListener("keyup", function (event) {
-    if (event.key === "Enter") {
-        const msgText = newChatInput.value;
-        const msgItem = document.createElement("li");
-        msgItem.classList.add("msg");
-        msgItem.innerHTML = `
-        <span class="msg-text">${msgText}</span>
-        `;
-        messages.appendChild(msgItem);
-        newChatInput.value = "";
-        console.log('abc')
-    }
-});
+function sendMessage() {
+    var message = document.getElementsByClassName("chating")[0].value;
+    document.getElementsByClassName("chatBox")[0].innerHTML += "<p> " + message + "</p>";
+    document.getElementsByClassName("chating")[0].value = "";
+}
