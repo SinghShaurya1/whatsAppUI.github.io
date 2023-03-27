@@ -162,12 +162,10 @@ p {
 
 .chatBox {
     position: relative;
-    top: 250px;
-    left: 160px;
-    width: 400px;
     background-color: greenyellow;
 }
 
 .text {
+    background-color: greenyellow;
     position: absolute;
 }
